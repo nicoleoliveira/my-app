@@ -1,0 +1,15 @@
+body {
+  margin: 20px;
+}
+
+.square {
+  background: #fff;
+  border: solid black 1px;
+  font-size: 24px;
+  font-weight: bold;
+  /* remover as bordas duplas */
+  margin-right: -1px;
+  margin-top: -1px;
+  width: 30px;
+  height: 30px;
+}
