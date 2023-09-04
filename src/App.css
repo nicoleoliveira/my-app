@@ -1,15 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 body {
   margin: 20px;
+  background-color: #c4bde8;
+  font-family: 'Roboto';
+}
+
+h1 {
+  color: #261d55;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 10px;
+  width: 50%;
+  margin-left: 25%;
 }
 
 .square {
-  background: #fff;
-  border: solid black 1px;
-  font-size: 24px;
+  background: inherit;
+  border: solid #9182dd 1px;
   font-weight: bold;
-  /* remover as bordas duplas */
-  margin-right: -1px;
-  margin-top: -1px;
-  width: 30px;
-  height: 30px;
+  min-width: 33px;
+  min-height: 33px;
+  cursor: pointer;
 }
+
+.text {
+  transition: 0.5s;
+  transition: font-size 0.225s cubic-bezier(0.4,0,0.2,1);
+}
+
+.text:empty {
+  font-size: 0px;
+}
+
+.text:not(:empty) {
+  font-size: 24px;
+}
+
+.square:nth-last-child(-n + 3) {
+  border-bottom: none;
+}
+
+.square:nth-child(-n + 3) {
+  border-top: none;
+}
+
+.square:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.square:nth-child(3n) {
+  border-right: none;
+}
+
