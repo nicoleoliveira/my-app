@@ -10,6 +10,11 @@ h1 {
   color: #261d55;
 }
 
+h2 {
+  font-size: 1em;
+  font-weight: lighter;;
+}
+
 .board {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -57,3 +62,10 @@ h1 {
   border-right: none;
 }
 
+.game-info button {
+  background-color: #ada5d5;
+  border: none;
+  color: #544d73;
+  border-radius: 2px;
+  cursor: pointer;
+}
